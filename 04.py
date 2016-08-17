@@ -1,6 +1,6 @@
 #python3
 import re
-s="Hi He Lied Because Boron Could Not Oxidize Fluorin. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
+s="Hi He Lied Because Boron Could Not Oxidize Fluorine. New Nations Might Also Sign Peace Security Clause. Arthur King Can."
 oneList=[1,5,6,7,8,9,15,16,19]
 
 def extTwoFirstChar(str):
