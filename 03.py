@@ -1,9 +1,8 @@
+import re
 s="Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
-s=s.replace(',','')
-s=s.replace('.','')
-ss=s.split(' ')
+wordlist = re.findall("[a-zA-Z]+", s)
 res = []
-for word in ss:
+for word in wordlist:
   res += [len(word)]
 
 print(res)
