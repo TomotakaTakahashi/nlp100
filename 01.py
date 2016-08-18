@@ -1,6 +1,9 @@
+#coding: utf-8
+
+
 # for python3
 
-s="パタトクカシーー"
+s=u"パタトクカシーー"
 res = s[::2]
 print (res)
 

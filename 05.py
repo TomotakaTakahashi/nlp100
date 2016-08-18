@@ -4,7 +4,8 @@
 import re
 import sys
 
-def n_gram(n, str):
+# extract character n-grams and calculate n-gram frequency
+def char_n_gram(n, str):
 	ngramList = {}
 	n=int(n)
 	str = str.lower()
@@ -18,4 +19,22 @@ def n_gram(n, str):
 					ngramList[word[i:i+n]]=1
 	return ngramList
 
-print (n_gram(sys.argv[1],sys.argv[2]))
+
+# extract character n-grams and calculate n-gram frequency 
+def word_n_gram(n, str):
+	next
+
+
+
+if __name__ == '__main__':
+	if len(sys.argv) != 3:
+		print "Usage: %s <n> <sentence>" % (sys.argv[0])
+		print "  <n>: n for n-gram."
+		print "  <sentence>: input sentence to generate n-grams"
+		print ""
+		print "  e.g., %s 2 \"This is a pen.\"" % (sys.argv[0])
+		exit(1)
+		
+	print (char_n_gram(sys.argv[1],sys.argv[2]))
+	print (word_n_gram(sys.argv[1],sys.argv[2]))
+
