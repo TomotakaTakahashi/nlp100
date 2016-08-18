@@ -2,13 +2,13 @@ import re
 
 text="Test sentence."
 
-def cipChar(match):
-	return chr(219-ord(match.group()))
+def cipChar(c):
+	return chr(219-ord(c))
 
 
 def cipher(s):	
 	p=re.compile('[a-z]')
-	res= p.sub(cipChar, s)
+	res= p.sub(lambda x:cipChar(x.group()), s)
 	return res
 
 
