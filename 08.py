@@ -3,7 +3,7 @@ import re
 text="Test sentence."
 
 def cipChar(c):
-	return chr(219-ord(c))
+	return chr(ord('z')+ord('a')-ord(c)) # ord('a')+ord('z')=219
 
 
 def cipher(s):	
