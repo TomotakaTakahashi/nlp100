@@ -1,12 +1,7 @@
-#coding: utf-8
+import itertools
 
-
-s0=u"パトカー"
-s1=u"タクシー"
-res=u""
-
-for i in range(len(s0)):
-	res+=s0[i]
-	res+=s1[i]
+s0 = "パトカー"
+s1 = "タクシー"
+res = "".join(itertools.chain(*zip(s0, s1)))
 
 print (res)

@@ -1,3 +1,3 @@
-s="stressed"
-res=s[::-1]
+s = "stressed"
+res = s[::-1]
 print(res)
